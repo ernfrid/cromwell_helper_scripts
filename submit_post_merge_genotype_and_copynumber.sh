@@ -7,4 +7,4 @@ INPUTS="$1"
 OPTIONS="$2"
 DEPENDENCIES="/home/delarson/gen_cn_config/wdl_dependencies.zip"
 
-curl -v "localhost:8000/api/workflows/v1" -F wdlSource=@${SOURCE} -F workflowInputs=@${INPUTS} -F workflowOptions=@${OPTIONS} -F wdlDependencies=@${DEPENDENCIES}
+curl -v "localhost:8000/api/workflows/v1" -F workflowSource=@${SOURCE} -F workflowInputs=@${INPUTS} -F workflowOptions=@${OPTIONS} -F workflowDependencies=@${DEPENDENCIES}
