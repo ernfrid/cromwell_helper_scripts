@@ -42,7 +42,7 @@ akka {
   # https://gatkforums.broadinstitute.org/gatk/discussion/comment/41714#Comment_41714
   http {
     server {
-      request-timeout = 100
+      request-timeout = 100s
     }
   }
 }
